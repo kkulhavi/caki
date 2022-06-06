@@ -81,7 +81,7 @@ module.exports = function(app, passport) {
 
 
 
-app.get('/api1',(req, res)=>{
+app.get('/api1',isLoggedIn,(req, res)=>{
 	const myList=[
 		{id:1, name:'product10', price:10},
 		{id:2, name:'product20', price:20},
